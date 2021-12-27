@@ -31,11 +31,6 @@ const Header = () => {
 
     return (
         <header>
-            <div className="">
-                <button onClick={goMain} className="btn btn-primary">
-                    Главная
-                </button>
-            </div>
             <div>
                 <button onClick={goBack} className="btn btn-secondary">
                     Назад
@@ -45,6 +40,12 @@ const Header = () => {
                     Вперед
                 </button>
             </div>
+            <div className="">
+                <button onClick={goMain} className="btn btn-primary">
+                    Главная
+                </button>
+            </div>
+
             <div className="search-box">
                 <input placeholder="Введите название блюда" onKeyDown={searchKeyDown} onChange={changeInput} className="search-input me-2" type="text"/>
                 <button  disabled={!searchInput} onClick={search} type="button" className="btn btn-success">Success</button>
@@ -52,5 +53,7 @@ const Header = () => {
         </header>
     );
 };
+
+
 
 export default Header;

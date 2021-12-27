@@ -16,6 +16,7 @@ const App = () => {
                     <Route path="/search/:name" element={<SearchResults/>}/>
                     <Route path="/ings/:ing" element={<SearchResults/>}/>
                     <Route path="*" element={<Navigate to={"/"} />}/>
+
                 </Routes>
         </div>
     );
